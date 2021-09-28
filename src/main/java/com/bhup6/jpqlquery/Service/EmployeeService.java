@@ -36,5 +36,7 @@ public interface EmployeeService {
 
     public List<Employee> getAllEmployeeNative();
 
+    public List<Employee>getByNameNative(String name);
+
 
 }

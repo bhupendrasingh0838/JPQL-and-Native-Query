@@ -74,5 +74,8 @@ public class EmployeeController {
         return service.getAllEmployeeNative();
     }
 
+    @GetMapping("/getByNameNative/{name}")
+    public List<Employee>getByNameNative(@PathVariable String name){return service.getByNameNative(name);}
+
 
 }

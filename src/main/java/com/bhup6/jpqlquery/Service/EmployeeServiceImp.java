@@ -85,6 +85,10 @@ public class EmployeeServiceImp implements EmployeeService{
     public List<Employee> getAllEmployeeNative() {
         return repository.getAllEmployeeNative();
     }
+    @Override
+    public List<Employee>getByNameNative(String name){
+        return repository.getByNameNative(name);
+    }
 
 
 }
